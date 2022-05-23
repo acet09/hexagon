@@ -1,0 +1,270 @@
+header{
+    position: fixed;
+}
+nav ul li .sub li .on{
+    color:#005794
+}
+/* 스토리 */
+.brand_bg{
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/sub/top/pcmilk.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.brand_story{
+    width: 100%;
+    background-color: #eee;
+    position: relative;
+}
+.brand_story .brand_box{
+    width: 1200px;
+    margin: 50px auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.brand_story .brand_box h1{
+    position: absolute;
+    top: -40px;
+    color: #111;
+    font-size: 50px;
+}
+.brand_story .brand_box .brand1{
+    order: 1;
+    width: 40%;
+    margin-top: 100px;
+}
+/* 애니메이션1 */
+.clip1{
+    position: relative;
+    width: 550px;
+    height: 350px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    animation-name: border_ani1;
+    animation-duration: 5s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+.clip1 img{
+    position: absolute;
+    left: 0;
+}
+@keyframes border_ani1 {
+    0%{clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 87%);}
+    25%{clip-path: polygon(10% 0, 100% 10%, 88% 100%, 0 87%);}
+    50%{clip-path: polygon(21% 0, 100% 19%, 76% 100%, 0 79%);}
+    75%{clip-path: polygon(12% 0, 100% 11%, 91% 100%, 0 87%);}
+}
+
+
+.brand_story .brand_box .brand2{
+    order: 2;
+    width: 45%;
+    padding: 100px 0;
+    margin-top: 100px;
+}
+.brand_story .brand_box .brand3{
+    order: 3;
+    width: 45%;
+    padding: 100px 0;
+}
+.brand_story .brand_box .brand4{
+    order: 4;
+    width: 40%;
+}
+/* 애니메이션2 */
+.clip2{
+    position: relative;
+    width: 550px;
+    height: 350px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    animation-name: border_ani2;
+    animation-duration: 5s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+.clip2 img{
+    position: absolute;
+    left: 0;
+}
+@keyframes border_ani2 {
+    0%{clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);}
+    25%{clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);}
+    50%{clip-path: polygon(20% 0%, 100% 0, 80% 100%, 0% 100%);}
+    75%{clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);}
+}
+.brand_story .brand_box h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.brand_story .brand_box p{
+    font-size: 18px;
+    color: #777;
+}
+
+/* 아이콘 */
+.brand_icon{
+    width: 100%;
+    margin: 0 auto;
+}
+.brand_icon ul{
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+.brand_icon ul h1{
+    font-size: 50px;
+    top: -40px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.brand_icon ul li{
+    width: 26%;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    padding-right: 85px;
+    border-right: 1px solid #333;
+}
+/* n=0 3*0+1 => 1 */
+/* n=1 3*1+1 => 4 */
+.brand_icon ul li:nth-last-child(3n+1){
+    border: none;
+}
+
+/* footer */
+.mobile_footer{
+    display: none;
+}
+
+@media screen and (max-width:1600px){
+
+}
+
+@media screen and (max-width:1200px){
+    .brand_story .brand_box h1 {
+        top: -90px;
+    }
+    .brand_story .brand_box{
+        width: 90%;
+    }
+    .brand_story .brand_box .brand4{
+        width: 48%;
+    }
+
+}
+
+@media screen and (max-width:1024px){
+    
+}
+
+@media screen and (max-width:768px){
+    .brand_bg{
+        height: 300px;
+    }
+    .brand_story .brand_box h1{
+        font-size: 40px;
+
+    }
+    .brand_story .brand_box{
+        flex-flow: column nowrap;
+    }
+
+    .brand_story .brand_box .brand1 {
+        order: 1;
+        width: 80%;
+        margin: 10px auto;
+    }    
+    .clip1{
+        animation-name: none;
+    }
+
+    .brand_story .brand_box .brand2 {
+        order: 2;
+        width: 80%;
+        margin: 10px auto;
+        padding: 0;
+    }  
+    .brand_story .brand_box .brand3 {
+        order: 4;
+        width: 80%;
+        margin: 10px auto;
+        
+        padding: 0;
+    } 
+    .brand_story .brand_box .brand4 {
+        order: 3;
+        width: 80%;
+        margin: 10px auto;
+    } 
+    .clip2{
+        animation-name: none;
+    }
+    .brand_story .brand_box h2{
+        font-size: 20px;
+    }
+    .brand_story .brand_box p{
+        font-size: 15px;
+    }
+
+    /* 아이콘 */
+    .brand_icon ul h1{
+        top: 20px;
+        font-size: 40px;
+    }
+    .brand_icon ul{
+        width: 70%;
+        justify-content: space-evenly;
+    }
+    .brand_icon ul li{
+        width: 34%;
+        border: none;
+        background-color: #aaa;
+        border-radius: 10px;
+        padding: 0;
+    }
+    /* .brand_icon ul li:nth-last-child(3n+1){
+        border-right: 1px solid #777;
+    }
+    .brand_icon ul li:nth-last-child(2n+1){
+        border-right: none;
+    } 
+    /* .brand_icon ul li:nth-last-child(-n+3){
+        margin-top:100px
+    }
+    */
+
+}
+
+
+
+@media screen and (max-width:480px){
+    .brand_story .brand_box h1{
+        font-size: 25px;
+        top: -70px;
+    }
+    .brand_icon ul h1{
+        font-size: 25px;
+    }
+
+    .clip1{
+        width: 370px;
+        height: 265px;
+    }
+
+    .clip2{
+        width: 370px;
+        height: 265px;
+    }
+
+
+}
+
+
+

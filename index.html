@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>정육각</title>
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="img/favicon-logo.png" type="image/x-icon">
+    <!-- 1. fullpage css -->
+    <link rel="stylesheet" href="css/jquery.fullPage.css" type="text/css">
+    <!-- 2. swiper css cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <!-- 3. slick slider cdn -->
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- 4. slick slider theme cdn <깃허브 오류로 인해 주석처리>-->
+    <!-- <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> -->
+    <!-- 4-2. slick slider css -->
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <!-- 5. splide cs -->
+    <link rel="stylesheet" href="css/splide.min.css" type="text/css">
+    <!-- @ main 외부 css -->
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+
+    <!-- ## js 모음 -->
+    <!-- 1. jquery js -->
+    <script src="js/jquery-3.6.0.js"></script>    
+    <!-- 2. fullpage js -->
+    <script src="js/jquery.fullPage.js"></script>
+    <!-- 3. swiper js cdn -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- 4. awesome icon js -->
+    <script src="https://kit.fontawesome.com/a60ed959b1.js" crossorigin="anonymous"></script>
+    <!-- 5. tweenmax js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <!-- 6. slick slider js cdn <깃허브 오류로 인한 주석처리-->
+    <!-- <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+    <!-- 6-2. slick slider js-->
+    <script src="js/slick.min.js"></script>
+    <!-- 7. splide js -->
+    <script src="js/splide.min.js"></script>
+    <!-- @ main 외부 js -->
+    <script src="js/index.js"></script>
+</head>
+<body>   
+    <!-- @@header -->
+    <header>
+        <!-- pc -->
+        <div class="logo">
+            <a href="index.html">
+                <div class="logo_img">
+                    <img src="img/icon/PC_header_logo.png" alt="pc_logo">
+                </div>                    
+                <p>정육각</p>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <!-- 주메뉴 -->
+                    <a href="#">
+                        <!-- awesome icon -->
+                        <i class="fa-solid fa-bacon"></i>
+                        <div class="main_menu">
+                            <div class="main_menu_box">
+                                <p>브랜드 스토리</p>
+                                <p>COMPANY</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- 서브메뉴 -->
+                    <ul class="sub">
+                        <li><a href="index_sub.html"class="on">초신선</a></li>
+                        <li><a href="#">오시는 길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- 주메뉴 -->
+                    <a href="#">
+                        <i class="fa-solid fa-drumstick-bite"></i>
+                        <div class="main_menu">
+                            <div class="main_menu_box">
+                            <p>공지사항</p>
+                            <p>NOTICE</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- 서브메뉴 -->
+                    <ul class="sub">
+                        <li><a href="#">정기점검</a></li>
+                        <li><a href="#">실험실</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- 주메뉴 -->                        
+                    <a href="#">
+                        <i class="fa-solid fa-egg"></i>
+                        <div class="main_menu">
+                            <div class="main_menu_box">
+                            <p>이용 가이드</p>
+                            <p>GUIDE</p>
+                            </div>                              
+                        </div>
+                    </a>
+                    <!-- 서브메뉴 -->
+                    <ul class="sub">
+                        <li><a href="#">쇼핑하기</a></li>
+                        <li><a href="#">배송안내</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- 주메뉴 -->                        
+                    <a href="#">
+                        <i class="fa-solid fa-cow"></i>
+                        <div class="main_menu">
+                            <div class="main_menu_box">
+                            <p>이벤트</p>
+                            <p>EVENT</p>
+                            </div>                                
+                        </div>
+                    </a>
+                    <!-- 서브메뉴 -->
+                    <ul class="sub">
+                        <li><a href="#">진행중</a></li>
+                        <li><a href="#">마감</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- 주메뉴 -->                        
+                    <a href="#">
+                        <i class="fa-solid fa-piggy-bank"></i>
+                        <div class="main_menu">
+                            <div class="main_menu_box">
+                            <p>고객서비스</p>
+                            <p>C.S</p>
+                            </div>                                
+                        </div>
+                    </a>
+                    <!-- 서브메뉴 -->
+                    <ul class="sub">
+                        <li><a href="#">Q&A</a></li>
+                        <li><a href="#">1:1문의</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="right_menu">
+            <ul>
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                </a></li>
+                <li><a href="#">
+                    <i class="fa-solid fa-bars"></i>
+                </a></li>
+            </ul>
+        </div>
+        <!-- 모바일 -->
+        <div class="mobile_menu_btn">
+            <a href="javascript:void(0);">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+        <div class="mobile_menu_nav">
+            <div class="mobile_menu_in">
+                <div class="mobile_menu_top">
+                    <div class="mobile_menu_tab">
+                        <div class="mobile_menu_tleft">
+                            <a href="#">메뉴</a>
+                            <a href="#">쇼핑하기</a>
+                        </div>
+                        <div class="mobile_menu_tright">
+                            <a href="javascript:void(0);">
+                                <!-- 쇼핑 버튼 -->
+                                <i class="fa-solid fa-cart-arrow-down"></i>
+                            </a>
+                            <a href="javascript:void(0);">
+                                <!-- 메뉴 버튼 -->
+                                <i class="fa-solid fa-xmark" style="font-size:6vh; line-height: 4vh;"></i>
+                            </a>                        
+                        </div>    
+                    </div>
+                    <div class="mobile_menu_login">                    
+                        <a href="#">로그인</a>
+                        <a href="#">회원가입</a>
+                        <a href="#">마이페이지</a>                    
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li class="active">
+                            <!-- 주메뉴 -->
+                            <a href="#">
+                                COMPANY    
+                                <i class="fa-solid fa-angle-down"></i>                 
+                            </a>
+                            <!-- 서브메뉴 -->
+                            <ul class="sub on">
+                                <li><a href="index_sub.html" class="on">초신선</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <!-- 주메뉴 -->
+                            <a href="#">
+                                NOTICE
+                                <i class="fa-solid fa-angle-down"></i> 
+                            </a>
+                            <!-- 서브메뉴 -->
+                            <ul class="sub">
+                                <li><a href="#">정기점검</a></li>
+                                <li><a href="#">실험실</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <!-- 주메뉴 -->
+                            <a href="#">
+                                GUIDE
+                                <i class="fa-solid fa-angle-down"></i> 
+                            </a>
+                            <!-- 서브메뉴 -->
+                            <ul class="sub">
+                                <li><a href="#">쇼핑하기</a></li>
+                                <li><a href="#">배송안내</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <!-- 주메뉴 -->
+                            <a href="#">
+                                EVENT
+                                <i class="fa-solid fa-angle-down"></i> 
+                            </a>
+                            <!-- 서브메뉴 -->
+                            <ul class="sub">
+                                <li><a href="#">진행중</a></li>
+                                <li><a href="#">마감</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <!-- 주메뉴 -->
+                            <a href="#">
+                                C.S
+                                <i class="fa-solid fa-angle-down"></i> 
+                            </a>
+                            <!-- 서브메뉴 -->
+                            <ul class="sub">
+                                <li><a href="#">Q&A</a></li>
+                                <li><a href="#">1:1문의</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>        
+        </div>        
+        <div class="mobile_menu_nav_back"></div>
+    </header>    
+    <div class="wrap" id="fullpage">        
+        <!-- @@visual -->
+        <section class="section visual">
+            <!-- swiper slide -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide sli1">
+                        <div class="visual_slide_cover">
+                            <div class="sli1_top">
+                                <p>정육각 첫구매 혜택</p>
+                                <h2>초신선 삼겹살<br>2인분을 드려요!</h2>
+                            </div>
+                            <div class="visual_button">
+                                <button type="button" onclick="location.href='index.html' ">가입하고 혜택받기</button>
+                            </div>                            
+                            <div class="swiper-pagination"></div>
+                            <div class="sli1_bottom">
+                                <div class="sli1_bottom1">
+                                    <p>오늘 주문하시면</p>
+                                    <div class="cap">0</div>
+                                    <div class="cap">5</div>
+                                    <div class="cap2">.</div>
+                                    <div class="cap">1</div>
+                                    <div class="cap">5</div>
+                                    <div class="cap2">.</div>
+                                    <div class="cap">일</div>
+                                </div>
+                                <div class="sli1_bottom2">
+                                    <p>도축한<span> 초신선 삽겹살</span>을 보내드려요!</p>
+                                    <i><img src="img/A/PC/HAXAGON_MARK.png" alt="투명정육각">
+                                        배송 지역 및 시간에 따라 도축일이 상이할 수 있습니다.</i>
+                                    <i><img src="img/A/PC/HAXAGON_MARK.png" alt="투명정육각">
+                                        다른 상품을 15,000원 이상 담아주세요.</i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide sli2">
+                        <div class="visual_slide_cover">
+                            <div class="sli2_top">
+                                <span>초신선으로 차곡 차곡!!</span>
+                                <h2>정육각 회원 혜택 등급 안내</h2>
+                                <p>정육각을 사랑해주시는 고객님들께 보답하기 위해<br>
+                                    가장 필요한 혜택을 모아 회원 등급 제도를 구성하였습니다.
+                                </p>
+                            </div>
+                            <div class="visual_button">
+                                <button type="button" onclick="location.href='index.html' ">혜택 확인하기</button>
+                            </div>                            
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide sli3">
+                        <div class="visual_slide_cover">
+                            <div class="sli3_top">
+                                <p>당일주문?? 당일배송!!</p>
+                                <h1>FLASH</h1>
+                                <h2>신선플랜</h2>
+                                <span> 3,500원으로 월 4회 무료 배송 해택을 받아보세요!</span>
+                            </div>
+                            <div class="meat"></div>
+                            <div class="visual_button">
+                            <button type="button" onclick="location.href='index.html' ">등록하기</button>
+                        </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide sli4">
+                        <div class="visual_slide_cover">
+                            <div class="visual_button">
+                                <button type="button" onclick="location.href='index.html' ">가족과 오붓하게</button>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+                
+            </div>
+        </section>
+        <!-- @@banner -->
+        <section class="section banner">
+            <div class="text">
+                <h2>정육각은<br>고민했습니다.</h2>
+                <p>왜 식재료는 가격이 저렴하며 품질이 떨어지고,<br>
+                    품질이 좋으면 비싸거나 발품을 팔아 힘들게 구해야만 할까요?</p>
+            </div>
+            <div class="contents">
+                <ul>
+                    <li class="hover_ani"><a href="index.html">
+                            <div class="li_bg bg1"></div>
+                            <div class="li_des">
+                                <h3>초신선</h3>
+                                <p>자세히 보기</p>
+                                <i class="fa-solid fa-right-long"></i>
+                            </div>
+                        </a></li>
+        
+                    <li class="hover_ani"><a href="index.html">
+                            <div class="li_bg bg2"></div>
+                            <div class="li_des">
+                                <h3>소비자의 눈</h3>
+                                <p>자세히 보기</p>
+                                <i class="fa-solid fa-right-long"></i>
+                            </div>
+                        </a></li>
+        
+                    <li class="hover_ani"><a href="index.html">
+                            <div class="li_bg bg3"></div>
+                            <div class="li_des">
+                                <h3>새로운 가치</h3>
+                                <p>자세히 보기</p>
+                                <i class="fa-solid fa-right-long"></i>
+                            </div>
+                        </a></li>       
+                </ul>
+            </div>
+        </section>        
+        <!-- @@six_tab -->
+        <section class="section six_tab">
+            <h1>정육각에서 준비된 초신선 제품들을 만나보세요!</h1>
+            <!-- slick slider -->
+            <div class="product">
+                <!-- p1 -->
+                <div class="p1">
+                    <div class="product_left">
+                        <i>갓 잡은 돼지고기</i>
+                        <div class="product_img">
+                            <img src="img/A/side_menu/PIG_red.png" alt="pig">
+                        </div>
+                    </div>
+                    <div class="product_right">
+                        <h3>정육각 시그니처 메뉴</h3>
+                        <p>전국적으로 초신선을 유행시킨<br>정육각만의 돼지고기를 만나보세요.</p>
+        
+                        <div class="contents">
+                            <div class="hover_ani">
+                                <div class="li_bg"></div>
+                                <div class="li_des">
+                                    <button><a href="index.html">더보기</a></button>
+                                    <i class="fa-solid fa-right-long"></i>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="op_cover">
+                            <!--흐릿한 반쪽 배경이미지 -->
+                        </div>
+                    </div>
+                </div>
+                <!-- p2 -->
+                <div class="p2">
+                    <div class="product_left">
+                        <i>제대로 숙성한 소고기</i>
+                        <div class="product_img">
+                            <img src="img/A/side_menu/COW_red.png" alt="COW">
+                        </div>
+                    </div>
+                    <div class="product_right">
+                        <h3>진한 육향이 가득</h3>
+                        <p>60일 저온 드라이에이징으로 숙성된<br>
+                            육향이 가득한 소고기를 정육각에서 경험해보세요.</p>
+                        <div class="contents">
+                            <div class="hover_ani">
+                                <div class="li_bg"></div>
+                                <div class="li_des">
+                                    <button><a href="index.html">더보기</a></button>
+                                    <i class="fa-solid fa-right-long"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="op_cover">
+                            <!--흐릿한 반쪽 배경이미지 -->
+                        </div>
+                    </div>
+                </div>
+                <!-- p3 -->
+                <div class="p3">
+                    <div class="product_left">
+                        <i>오늘 잡은 닭고기</i>
+                        <div class="product_img">
+                            <img src="img/A/side_menu/HAT_red.png" alt="hat">
+                        </div>
+                    </div>
+                    <div class="product_right">
+                        <h3>육류 소비율 1위</h3>
+                        <p>깨끗한 사육장에서 좋은 사료를 먹고<br>
+                            자란 닭들을 엄선하여 만들었습니다.</p>
+                        <div class="contents">
+                            <div class="hover_ani">
+                                <div class="li_bg"></div>
+                                <div class="li_des">
+                                    <button><a href="index.html">더보기</a></button>
+                                    <i class="fa-solid fa-right-long"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="op_cover">
+                            <!--흐릿한 반쪽 배경이미지 -->
+                        </div>
+                    </div>
+                </div>
+                <!-- p4 -->
+                <div class="p4">
+                    <div class="product_left">
+                        <i>초신선을 더 맛있게</i>
+                        <div class="product_img">
+                            <img src="img/A/side_menu/MIKIT_red.png" alt="MIKIT">
+                        </div>
+                    </div>
+                    <div class="product_right">
+                        <h3>어린이 간식, 부모님 술안주</h3>
+                        <p>초신선을 활용한 정육각만의 비법과<br>
+                            노하우가 담긴 제품들을 경험해보세요.</p>
+                        <div class="contents">
+                            <div class="hover_ani">
+                                <div class="li_bg"></div>
+                                <div class="li_des">
+                                    <button><a href="index.html">더보기</a></button>
+                                    <i class="fa-solid fa-right-long"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="op_cover">
+                            <!--흐릿한 반쪽 배경이미지 -->
+                        </div>
+                    </div>
+                </div>
+                <!-- p5 -->
+                <div class="p5">
+                    <div class="product_left">
+                        <i>오늘 낳은 달걀</i>
+                        <div class="product_img">
+                            <img src="img/A/side_menu/EGG_red.png" alt="egg">
+                        </div>
+                    </div>
+                    <div class="product_right">
+                        <h3>1일 1달걀</h3>
+                        <p>“완전식품”이라고 불리는 무항생제 달걀을<br>
+                            정육각에서 만나보세요.</p>
+                        <div class="contents">
+                            <div class="hover_ani">
+                                <div class="li_bg"></div>
+                                <div class="li_des">
+                                    <button><a href="index.html">더보기</a></button>
+                                    <i class="fa-solid fa-right-long"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="op_cover">
+                            <!--흐릿한 반쪽 배경이미지 -->
+                        </div>
+                    </div>
+                </div>
+                <!-- p6 -->
+                <div class="p6">
+                    <div class="product_left">
+                        <i>우리 아이 첫 초신선</i>
+                        <div class="product_img">
+                            <img src="img/A/side_menu/BABY_red.png" alt="baby">
+                        </div>
+                    </div>
+                    <div class="product_right">
+                        <h3>첫 이유식은 안전하게</h3>
+                        <p>우리 아이 첫 이유식은 무항생제로<br>
+                            건강하게 시작해보세요.</p>
+                        <div class="contents">
+                            <div class="hover_ani">
+                                <div class="li_bg"></div>
+                                <div class="li_des">
+                                    <button><a href="index.html">더보기</a></button>
+                                    <i class="fa-solid fa-right-long"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="op_cover">
+                            <!--흐릿한 반쪽 배경이미지 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- @@line_tab -->
+        <section class="section line_tab">
+            <h1>5월 이벤트 안내</h1>
+            <div class="membership">
+                <!-- pc 썸네일 splide-->
+                <div class="membership_title ">        
+                    <div id="thumbnail-carousel" class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">        
+                                <li class="splide__slide">
+                                    <a href="javascript:void(0);">친구 초대
+                                        <i class="fa-solid fa-play"></i>
+                                    </a>
+                                </li>
+                                <li class="side">|</li>
+                                <li class="splide__slide">
+                                    <a href="javascript:void(0);">앱 이벤트<i class="fa-solid fa-play"></i>
+                                    </a>
+                                </li>
+                                <li class="side">|</li>
+                                <li class="splide__slide">
+                                    <a href="javascript:void(0);">리뷰 혜택<i class="fa-solid fa-play"></i>
+                                    </a>
+                                </li>
+                                <li class="side">|</li>
+                                <li class="splide__slide">
+                                    <a href="javascript:void(0);">제주 흑돼지<i class="fa-solid fa-play"></i>
+                                    </a>
+                                </li>        
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+       
+                <!-- 이미지 splide-->
+                <div id="main-carousel" class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">        
+                            <!-- 1.친구 초대 -->
+                            <li class="splide__slide">
+                                <!-- 탭내용 설명 -->
+                                <div class="splide_des txt1">
+                                    <div class="splide_des_in">
+                                        <b>소중한 사람에게 전하는 일상의 행복</b>
+                                        <h2>정육각<br><span>친구 초대 이벤트</span></h2>
+                                        <p>고객님이 떠올린 소중한 분들께<br> 초신선의 혜택을 선물해보세요.</p>
+                                    </div>
+                                </div>
+                                <!-- 탭내용 이미지 -->
+                                <div class="splide_img">
+                                    <div class="splide_img_in">
+                                        <!-- 공백 -->
+                                    </div>
+                                </div>
+                                <div class="bg_covers D_1"></div>
+                            </li>        
+                            <!-- 2.app 가입 -->
+                            <li class="splide__slide">
+                                <!-- 탭내용 설명 -->
+                                <div class="splide_des txt2">
+                                    <div class="splide_des_in">
+                                        <b>초신선 일상이 되다</b>
+                                        <h2>정육각<br>앱 설치 이벤트</h2>
+                                    </div>
+                                </div>
+                                <!-- 탭내용 이미지 -->
+                                <div class="splide_img">
+                                    <div class="splide_img_in">
+                                        <!-- 공백 -->
+                                    </div>
+                                </div>
+                                <div class="bg_covers D_2"></div>
+                            </li>        
+                            <!-- 3.리뷰 이벤트 -->
+                            <li class="splide__slide">
+                                <!-- 탭내용 설명 -->
+                                <div class="splide_des txt3">
+                                    <div class="splide_des_in">
+                                        <h2>인스타그램 리뷰남기고<br>적립금 받아가세요!</h2>
+                                        <p>최대 7천원 적립금 혜택!</p>
+                                    </div>
+                                </div>
+                                <!-- 탭내용 이미지 -->
+                                <div class="splide_img">
+                                    <div class="splide_img_in">
+                                        <img src="img/D/PC/D_insta.png" alt="insta">
+                                    </div>
+                                </div>
+                                <div class="bg_covers D_3"></div>
+                            </li>        
+                            <!-- 4.흑돼지 -->
+                            <li class="splide__slide">
+                                <!-- 탭내용 설명 -->
+                                <div class="splide_des txt4">
+                                    <div class="splide_des_in">
+                                        <h2>제주산 <span>흑돼지</span></h2>
+                                        <h3><span>50%</span>할인</h3>
+                                        <p>정육각에서 처음 선보이는<br>
+                                            초신선 흑돼지고기를<br>
+                                            할인된 가격에 만나보세요.</p>
+                                    </div>
+                                </div>
+                                <!-- 탭내용 이미지 -->
+                                <div class="splide_img">
+                                    <div class="splide_img_in">
+                                        <img src="img/D/PC/D_stemp.png" alt="1+stemp">
+                                    </div>
+                                </div>
+                                <div class="bg_covers D_4"></div>
+                            </li>        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- @@hive -->
+        <section class="section hive">
+            <!-- pc -->
+            <div class="title">
+                <h1>"초신선"의 지름길</h1>
+                <p>정육각에서 직접 운영하는 목장으로 여러분을 초대합니다.</p>
+                <b>정육각에서 직접 운영하는<br>목장으로 여러분을 초대합니다.</b>
+            </div>
+            <div class="con">
+                <div class="left_menu">
+                    <h2>정육각 전용 축사</h2>
+                    <p>강원도 평창군 대관령면 : 한우리 목장<br>
+                        인천광역시 서구 신현동 : OK 목장<br>
+                        화곡동 921-13번지 강서구 : 남향 양계장<br>
+                        경기도 용인시 처인구 원삼면 : 황금 농장<br>
+                        강원도 횡성군 서원면 창촌남길 12 : 금순이 한우<br>
+                        제주특별자치도 제주시 조천읍 와흘리 671 : 하루방 한우<br>
+                        제주특별자치도 서귀포시 이어도로 778-1 : 돈사돈 흑돼지</p>
+                </div>                  
+                <div class="right_menu">
+                    <div class="contents">
+                        <ul class="hive_imgs">
+                            <li class="hover_ani"><a href="javascript:void(0);">
+                                    <div class="li_bg farm1"></div>
+                                </a></li>
+                            <li class="hover_ani"><a href="javascript:void(0);">
+                                    <div class="li_bg farm2"></div>
+                                </a></li>
+                            <li class="hover_ani"><a href="javascript:void(0);">
+                                    <div class="li_bg farm3"></div>
+                                </a></li>
+                            <li class="hover_ani"><a href="javascript:void(0);">
+                                    <div class="li_bg farm4"></div>
+                                </a></li>
+                            <li class="hover_ani"><a href="javascript:void(0);">
+                                    <div class="li_bg farm5"></div>
+                                </a></li>
+                            <div class="hive_five"></div>
+                            <div class="hive_five_cover">
+                                <div>화곡동 남향양계장</div>
+                                <div>횡성군 금순이한우</div>
+                                <div style="padding-left: 2.2vh;">원삼면 황금 농장</div>
+                                <div>대관령 한우리목장</div>
+                                <div style="padding-left: 2.5vh;">신현동 OK 목장</div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>  
+            <!-- 768 -->
+        </section>
+        <!-- @@photo -->
+        <section class="section photo"> 
+            <div class="photo_con">
+                <div class="photo_left_txt">
+                    <h2>
+                        <img src="img/F/PC/F_logo.png" alt="logo" style="width: 9%;">
+                        정육각<br>제주산 흑돼지 출시
+                    </h2>
+                    <b>제주도 고유품종 흑돼지고기를<br>
+                        집에서도 초신선으로 경험해보세요.</b>
+                    <p>우리나라 토종 돼지 종자 중의 하나인 제주 흑돼지는<br>
+                        내륙과 떨어진 독립된 환경에서 다른 품종의 돼지와<br>
+                        계통이 섞이지 않고 오랫동안 생존한 제주 고유의 재래가축입니다.<br>
+                        제주도 특유의 기후와 풍토에 잘 적응하여 체구는 작지만<br>
+                        체질이 강건하고 질병저항성이 강한 특성을 지니고 있다.</p>                    
+                    <div class="contents">
+                        <div class="hover_ani">
+                            <div class="li_bg">
+                                <button type="button" onclick="location.href='index.html' ">
+                                    지금 구매하기
+                                    <iclass="fa-solid fa-right-long">
+                                        </iclass=>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo_right_imgs">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <!-- pc -->
+                            <div class="swiper-slide photo_pc">
+                                <div class="swiper-zoom-container">
+                                    <img src="img/F/PC/F_black.png" alt="black" />
+                                </div>
+                            </div>
+                            <div class="swiper-slide photo_pc">
+                                <div class="swiper-zoom-container">
+                                    <img src="img/F/PC/F_garlic.png" alt="garlic" />
+                                </div>
+                            </div>
+                            <div class="swiper-slide photo_pc">
+                                <div class="swiper-zoom-container">
+                                    <img src="img/F/PC/F_jamon.png" alt="jamon" />
+                                </div>
+                            </div>
+                            <!-- 모바일 -->
+                            <div class="swiper-slide photo_mobile">
+                                <img src="img/F/Mobile/F_M_black.png" alt="pig">
+                            </div>
+                            <div class="swiper-slide photo_mobile">
+                                <img src="img/F/Mobile/F_M_garlic.png" alt="garlic">
+                            </div>
+                            <div class="swiper-slide photo_mobile">
+                                <img src="img/F/Mobile/F_M_jamon.png" alt="jamon">
+                            </div>
+                        </div>
+                        <!-- <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div> -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+        </div>
+        </section>        
+        <!-- @@map -->
+        <section class="section map">
+            <h2>오프라인 매장</h2>
+            <div class="map_google">
+                <div class="first_map sub_map">
+                    <img src="img/A/PC/back_A_01-2.png" alt="BACK1" style="width :100%; height:100%">
+                </div>
+                <div class="second_map sub_map">
+                    <img src="img/A/PC/back_A_03.png" alt="BACK3" style="width :100%; height:100%">
+                </div>
+                <!-- <div class="first_map sub_map"> 
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3161.122030566366!2d126.78704351558922!3d37.59928693000898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca9527ae2bc67%3A0x16fca07afea52952!2z7KCV7Jyh6rCB!5e0!3m2!1sko!2skr!4v1652410856154!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div> 
+                <div class="second_map sub_map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d792.4676083993845!2d126.92296485056097!3d37.392896282997754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b60cd485ffb4d%3A0xf4e349ffb0292345!2z7JWI7JaR7IucIOygleycoeqwgQ!5e0!3m2!1sko!2skr!4v1652544043216!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>  -->
+            </div>
+            <div class="map_cont">
+                <div class="map_table on">
+                    <!-- 1. 왼쪽 가맹점 -->
+                    <div class="left_title1">
+                        <div class="map_search">
+                            <input type="text" placeholder="주소를 입력해주세요.">
+                            <button><i class="fa-solid fa-magnifying-glass-location"></i></button>
+                        </div>
+                        <div class="left_home">
+                            <ul>
+                                <li class="B_light"><a href="#">고촌 본점
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>  
+                                </a></li>
+                                <li class="B_light"><a href="#">안양 2호점
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </a></li>
+                                <li><a href="#">준비중입니다.</a></li>
+                                <li><a href="#">준비중입니다.</a></li>
+                                <li><a href="#">준비중입니다.</a></li>
+                                <li><a href="#">준비중입니다.</a></li>
+                                <li><a href="#">준비중입니다.</a></li>                            
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 2. 가운데 이미지 -->
+                    <div class="center_img2">
+                        <ul>
+                            <li class="on"><a href="#"><!--배경이미지--></a></li>
+                            <li ><a href="#"><!--배경이미지--></a></li>
+                        </ul>
+                    </div>
+                    <!-- 3. 오른쪽 설명글 -->
+                    <div class="right_text3">
+                        <ul class="text3_main">
+                            <li>
+                                <h4>고촌점</h4>
+                                <p class="m_text_hide"><img src="img/G/PC/G_pin.png" alt="pin">경기도 김포시 고촌읍 아라육로57번길 126</p>
+                                <p><img src="img/G/PC/G_call.png" alt="call">24시간 영업</p>
+                                <p><img src="img/G/PC/G_time.png" alt="time">1800-0658</p>
+                            </li>
+                            <li>
+                                <h4>안양점</h4>
+                                <p class="m_text_hide"><img src="img/G/PC/G_pin.png" alt="pin">만안구 안양동 613-14번지</p>
+                                <p><img src="img/G/PC/G_call.png" alt="call">06:00 ~ 20:00 / 일.공휴일 휴무</p>
+                                <p><img src="img/G/PC/G_time.png" alt="time">070-432-8422</p>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- @@sns -->
+        <section class="section sns">
+            <div class="sns_cover">
+                <h2>SNS</h2>
+                <div class="sns_con">
+                    <div class="sns_img" onclick="location.href='index.html'">유퀴즈</div>
+                    <div class="sns_img" onclick="location.href='index.html'">유튜브보도</div>
+                    <div class="sns_img" onclick="location.href='index.html'">문화행사</div>
+                    <div class="sns_img" onclick="location.href='index.html'">벛꽃축제</div>
+                    <div class="sns_img" onclick="location.href='index.html'">거리두기해제</div>
+                </div>
+            </div>
+        </section>   
+        <!-- @@footer -->
+        <!-- pc -->
+        <footer class="section footer pc_footer fp-auto-height">
+            <div class="footer_menu">
+
+                <div class="footer_left">
+                    <div class="footer_sns_rule">
+                        <ul>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                        </ul>
+                    </div>                    
+                    <div class="footer_logo">
+                        <a href="#">
+                            <img src="img/icon/footer_logo.png" alt="footer_logo"><h2>정육각</h2>
+                        </a>                        
+                    </div>                    
+                    <p>(주)정육각대표이사 : 김재연 | 주소 : 경기도 김포시 고촌읍 아라육로57번길 126<br>
+                        사업자등록번호 : 224-87-00271 | 통신판매업신고번호 : 2021-경기김포-0668<br>
+                        개인정보관리책임자 : 박태준(privacy@yookgak.com)</p>
+                    <span>ⓒ2021Jeongyookgak Inc. All rights reserved</span>
+                </div>
+
+                <div class="footer_right">
+                    <div class="footer_sns_img">
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_num">
+                        <b><a href="#">고객센터</a></b>
+                        <h2><a href="#">1800-0658</a></h2>
+                    </div>  
+                            
+                    <div class="footer_info">
+                        <ul>
+                            <li>평일:08:30 - 17:30</li>
+                            <li>점심:12:00 - 13:30</li>
+                            <li>[토,일 및 공휴일 휴무]</li>
+                            <li><a href="#">카카오톡 : @정육각</a></li>
+                            <li><a href="#">이메일 : @yookgak.com</a></li>
+                        </ul>
+                    </div>
+                    <p></p>
+                </div>
+            </div>       
+        </footer>
+        <!-- mobile -->
+        <footer class="section mobile_footer fp-auto-height">
+            <div class="mobile_footer_sns">
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-line"></i></a></li>
+                </ul>
+            </div>
+            <div class="mobile_footer_title">
+                <b>정육각 고객센터</b>
+                <h2>1800-0658</h2>
+            </div>
+            <div class="mobile_footer_text">
+                <p>
+                    평일:08:30 - 17:30   점심:12:00 - 13:30<br>
+                    (토,일 및 공휴일 휴무) <br>
+                    카카오톡:@정육각<br>
+                    이메일:help@yookgak.com
+                </p>
+            </div>
+            <div class="mobile_footer_cover">
+                <div class="mobile_footer_rule">
+                    <p><a href="#">이용약관</a></p>
+                    <p><a href="#">개인정보처리방침</a></p>
+                </div>
+                <div class="mobile_footer_address">
+                    <address>
+                        (주)정육각대표이사 : 김재연<br>
+                        주소 : 경기도 김포시 고촌읍 아라육로57번길 126<br>
+                        사업자등록번호 : 224-87-00271<br>
+                        통신판매업신고번호 : 2021-경기김포-0668<br>
+                        개인정보관리책임자 : 박태준(privacy@yookgak.com)
+                    </address>
+                </div>
+                <div class="mobile_footer_copy">
+                    <p>ⓒ2021Jeongyookgak Inc. All rights reserved</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- slick slider js -->
+    <script>
+        $('.product').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear'
+        });
+    </script>
+    </body>
+</html>
